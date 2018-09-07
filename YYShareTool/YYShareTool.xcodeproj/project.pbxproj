@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC380412140F8FB0069E76E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC380402140F8FB0069E76E /* AppDelegate.m */; };
+		BCC380442140F8FB0069E76E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC380432140F8FB0069E76E /* ViewController.m */; };
+		BCC380472140F8FB0069E76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC380452140F8FB0069E76E /* Main.storyboard */; };
+		BCC380492140F8FC0069E76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC380482140F8FC0069E76E /* Assets.xcassets */; };
+		BCC3804C2140F8FC0069E76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC3804A2140F8FC0069E76E /* LaunchScreen.storyboard */; };
+		BCC3804F2140F8FC0069E76E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC3804E2140F8FC0069E76E /* main.m */; };
+		BCC3805A2140F99C0069E76E /* YYBaseShare.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC380562140F99C0069E76E /* YYBaseShare.m */; };
+		BCC3805B2140F99C0069E76E /* YYShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC380592140F99C0069E76E /* YYShareTool.m */; };
+		F121A3EAB0858C691B551D63 /* libPods-YYShareTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFD1D9418C1E9F3A3313E7C /* libPods-YYShareTool.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AFD1D9418C1E9F3A3313E7C /* libPods-YYShareTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYShareTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		537D8507D08F5FC4A003E7B5 /* Pods-YYShareTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYShareTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYShareTool/Pods-YYShareTool.release.xcconfig"; sourceTree = "<group>"; };
+		B3A238EED3228DF7BC1F4CEC /* Pods-YYShareTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYShareTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYShareTool/Pods-YYShareTool.debug.xcconfig"; sourceTree = "<group>"; };
+		BCC3803C2140F8FB0069E76E /* YYShareTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYShareTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC3803F2140F8FB0069E76E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCC380402140F8FB0069E76E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCC380422140F8FB0069E76E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCC380432140F8FB0069E76E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCC380462140F8FB0069E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC380482140F8FC0069E76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC3804B2140F8FC0069E76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC3804D2140F8FC0069E76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC3804E2140F8FC0069E76E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCC380562140F99C0069E76E /* YYBaseShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBaseShare.m; sourceTree = "<group>"; };
+		BCC380572140F99C0069E76E /* YYShareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYShareTool.h; sourceTree = "<group>"; };
+		BCC380582140F99C0069E76E /* YYBaseShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBaseShare.h; sourceTree = "<group>"; };
+		BCC380592140F99C0069E76E /* YYShareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYShareTool.m; sourceTree = "<group>"; };
+		BCC3805C2140FC0F0069E76E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC380392140F8FB0069E76E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F121A3EAB0858C691B551D63 /* libPods-YYShareTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E2E827D451E72B76AF36AC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3A238EED3228DF7BC1F4CEC /* Pods-YYShareTool.debug.xcconfig */,
+				537D8507D08F5FC4A003E7B5 /* Pods-YYShareTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCC380332140F8FB0069E76E = {
+			isa = PBXGroup;
+			children = (
+				BCC3803E2140F8FB0069E76E /* YYShareTool */,
+				BCC3803D2140F8FB0069E76E /* Products */,
+				7E2E827D451E72B76AF36AC5 /* Pods */,
+				F309283336B01A75CDBC6538 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC3803D2140F8FB0069E76E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3803C2140F8FB0069E76E /* YYShareTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC3803E2140F8FB0069E76E /* YYShareTool */ = {
+			isa = PBXGroup;
+			children = (
+				BCC380552140F99C0069E76E /* YYShareTool */,
+				BCC3803F2140F8FB0069E76E /* AppDelegate.h */,
+				BCC380402140F8FB0069E76E /* AppDelegate.m */,
+				BCC380422140F8FB0069E76E /* ViewController.h */,
+				BCC380432140F8FB0069E76E /* ViewController.m */,
+				BCC3805C2140FC0F0069E76E /* PrefixHeader.pch */,
+				BCC380452140F8FB0069E76E /* Main.storyboard */,
+				BCC380482140F8FC0069E76E /* Assets.xcassets */,
+				BCC3804A2140F8FC0069E76E /* LaunchScreen.storyboard */,
+				BCC3804D2140F8FC0069E76E /* Info.plist */,
+				BCC3804E2140F8FC0069E76E /* main.m */,
+			);
+			path = YYShareTool;
+			sourceTree = "<group>";
+		};
+		BCC380552140F99C0069E76E /* YYShareTool */ = {
+			isa = PBXGroup;
+			children = (
+				BCC380572140F99C0069E76E /* YYShareTool.h */,
+				BCC380592140F99C0069E76E /* YYShareTool.m */,
+				BCC380582140F99C0069E76E /* YYBaseShare.h */,
+				BCC380562140F99C0069E76E /* YYBaseShare.m */,
+			);
+			path = YYShareTool;
+			sourceTree = "<group>";
+		};
+		F309283336B01A75CDBC6538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AFD1D9418C1E9F3A3313E7C /* libPods-YYShareTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC3803B2140F8FB0069E76E /* YYShareTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC380522140F8FC0069E76E /* Build configuration list for PBXNativeTarget "YYShareTool" */;
+			buildPhases = (
+				CE835574711B295227450C4B /* [CP] Check Pods Manifest.lock */,
+				BCC380382140F8FB0069E76E /* Sources */,
+				BCC380392140F8FB0069E76E /* Frameworks */,
+				BCC3803A2140F8FB0069E76E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYShareTool;
+			productName = YYShareTool;
+			productReference = BCC3803C2140F8FB0069E76E /* YYShareTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC380342140F8FB0069E76E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hengtiansoft;
+				TargetAttributes = {
+					BCC3803B2140F8FB0069E76E = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BCC380372140F8FB0069E76E /* Build configuration list for PBXProject "YYShareTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC380332140F8FB0069E76E;
+			productRefGroup = BCC3803D2140F8FB0069E76E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC3803B2140F8FB0069E76E /* YYShareTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC3803A2140F8FB0069E76E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3804C2140F8FC0069E76E /* LaunchScreen.storyboard in Resources */,
+				BCC380492140F8FC0069E76E /* Assets.xcassets in Resources */,
+				BCC380472140F8FB0069E76E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE835574711B295227450C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYShareTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC380382140F8FB0069E76E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3805A2140F99C0069E76E /* YYBaseShare.m in Sources */,
+				BCC380442140F8FB0069E76E /* ViewController.m in Sources */,
+				BCC3805B2140F99C0069E76E /* YYShareTool.m in Sources */,
+				BCC3804F2140F8FC0069E76E /* main.m in Sources */,
+				BCC380412140F8FB0069E76E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCC380452140F8FB0069E76E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC380462140F8FB0069E76E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC3804A2140F8FC0069E76E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC3804B2140F8FC0069E76E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC380502140F8FC0069E76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCC380512140F8FC0069E76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC380532140F8FC0069E76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A238EED3228DF7BC1F4CEC /* Pods-YYShareTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YYShareTool/PrefixHeader.pch";
+				INFOPLIST_FILE = YYShareTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hengtiansoft.YYShareTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC380542140F8FC0069E76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537D8507D08F5FC4A003E7B5 /* Pods-YYShareTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YYShareTool/PrefixHeader.pch";
+				INFOPLIST_FILE = YYShareTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hengtiansoft.YYShareTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC380372140F8FB0069E76E /* Build configuration list for PBXProject "YYShareTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC380502140F8FC0069E76E /* Debug */,
+				BCC380512140F8FC0069E76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC380522140F8FC0069E76E /* Build configuration list for PBXNativeTarget "YYShareTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC380532140F8FC0069E76E /* Debug */,
+				BCC380542140F8FC0069E76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC380342140F8FB0069E76E /* Project object */;
+}
