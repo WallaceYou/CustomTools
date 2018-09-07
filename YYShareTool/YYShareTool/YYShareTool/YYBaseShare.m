@@ -186,7 +186,7 @@ collectionViewHeight;\
     
     
     //开始动画
-    [UIView animateWithDuration:StartAnimateDuration delay:0 usingSpringWithDamping:.92 initialSpringVelocity:12.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:StartAnimateDuration delay:0 usingSpringWithDamping:.95 initialSpringVelocity:12.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         shareShadowView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
         shareBgView.frame = CGRectMake(0, kWindowH-ShareBgViewHeight, kWindowW, ShareBgViewHeight+SpringInset);
     } completion:^(BOOL finished) {

@@ -136,7 +136,7 @@
     if (!_baseShare) {
         _baseShare = [YYBaseShare new];
         _baseShare.platformCollectionInset = 20;//左右间距
-        _baseShare.cellSize = CGSizeMake(100, 65);//cell大小
+        _baseShare.cellSize = CGSizeMake(60, 65);//cell大小
         _baseShare.platformImageNames = @[@"share_twitter",@"share_linkedin",@"share_facebook",@"share_wechat",@"share_weibo",@"share_twitter",@"share_linkedin",@"share_facebook",@"share_wechat",@"share_weibo",@"share_weibo"];//三方平台icon图片名
         _baseShare.platforms = @[@"Twitter",@"Linkedin",@"Facebook",@"Wechat",@"Weibo",@"Twitter",@"Linkedin",@"Facebook",@"Wechat",@"Weibo",@"Weibo"];//三方平台名称
         _baseShare.showType = PlatformShowTypeVertical;//三方平台的展示方向，横向还是纵向
