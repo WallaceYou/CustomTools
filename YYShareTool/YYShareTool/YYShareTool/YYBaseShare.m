@@ -30,8 +30,8 @@ collectionViewHeight;\
 #define CellColumnSpacing   5    //列间距
 #define CellLineSpacing     10   //行间距
 
-//弹簧动画多显示的长度
-#define SpringInset         30
+//动画多显示的长度
+#define SpringInset         20
 
 
 
@@ -169,31 +169,28 @@ collectionViewHeight;\
     }];
     
     
-    //弹簧动画
-//    CASpringAnimation *springAnimation = [CASpringAnimation animationWithKeyPath:@"position.y"];
-//    springAnimation.delegate = self;
-//    springAnimation.damping = 28;
-//    springAnimation.stiffness = 180;
-//    springAnimation.mass = 1;
-//    springAnimation.initialVelocity = 25;
-//    springAnimation.duration = springAnimation.settlingDuration;
-//    springAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    springAnimation.removedOnCompletion = NO;
-//    springAnimation.fillMode = kCAFillModeForwards;
-//
-//    springAnimation.byValue = [NSNumber numberWithFloat:-ShareBgViewHeight];
-//    [self.shareBgView.layer addAnimation:springAnimation forKey:nil];
-    
-    
     //开始动画
-    [UIView animateWithDuration:StartAnimateDuration delay:0 usingSpringWithDamping:.95 initialSpringVelocity:12.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
         shareShadowView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
-        shareBgView.frame = CGRectMake(0, kWindowH-ShareBgViewHeight, kWindowW, ShareBgViewHeight+SpringInset);
+        shareBgView.frame = CGRectMake(0, kWindowH-ShareBgViewHeight-10, kWindowW, ShareBgViewHeight+SpringInset);
+        
     } completion:^(BOOL finished) {
-        if (popAnimateComplete) {
-            popAnimateComplete();
-        }
+        [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            shareBgView.frame = CGRectMake(0, kWindowH-ShareBgViewHeight+5, kWindowW, ShareBgViewHeight+SpringInset);
+            
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                
+                shareBgView.frame = CGRectMake(0, kWindowH-ShareBgViewHeight, kWindowW, ShareBgViewHeight+SpringInset);
+                
+            } completion:^(BOOL finished) {
+                if (popAnimateComplete) {
+                    popAnimateComplete();
+                }
+            }];
+        }];
     }];
+    
 }
 
 
