@@ -118,6 +118,7 @@
     
     BOOL hasUpper = self.isMovingToParentViewController;
     BOOL isPresenting = self.presentingViewController != nil;
+    BOOL isPresented = self.presentedViewController != nil;
     
     //判断此页面是被pop还是push出来的
     if (hasUpper) {//此页面是被push，或者present，或者是根控制器
@@ -141,9 +142,14 @@
         
     } else {//此页面是pop，或者dismiss出来的
         
-        NSLog(@"此页面是被pop或者dismiss出来的");
-        if (self.navigationController.viewControllers.count > 1) {
-            
+        if (isPresented) {
+            NSLog(@"此页面是被dismiss出来的");
+        } else {
+            if (self.navigationController == nil || self.navigationController.viewControllers.count == 1) {
+                NSLog(@"此页面是根控制器");
+            } else {
+                NSLog(@"此页面是被pop出来的");
+            }
         }
     }
 }
