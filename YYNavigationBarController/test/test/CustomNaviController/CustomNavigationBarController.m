@@ -12,11 +12,11 @@
 
 
 /** 扩大按钮的点击区域 */
-@interface YYButton : UIButton
+@interface ReturnButton : UIButton
 
 @end
 
-@implementation YYButton
+@implementation ReturnButton
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent*)even {
     
@@ -228,7 +228,7 @@
 
 
 - (void)addBackButton {
-    YYButton *backBtn = [YYButton buttonWithType:UIButtonTypeCustom];
+    ReturnButton *backBtn = [ReturnButton buttonWithType:UIButtonTypeCustom];
     [backBtn setBackgroundImage:[UIImage imageNamed:@"blackback"] forState:UIControlStateNormal];
     [backBtn setBackgroundImage:[UIImage imageNamed:@"blackback"] forState:UIControlStateHighlighted];
     [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
