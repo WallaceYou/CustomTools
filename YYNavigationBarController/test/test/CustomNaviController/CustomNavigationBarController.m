@@ -104,6 +104,7 @@
     if (!self.navigationController) {
         // 如果没有navigationController，则将自定义的navigationBar移除掉
         [self.navigationBarView removeFromSuperview];
+        self.navigationBarView = nil;
         [self.cusView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(0);
         }];
