@@ -199,7 +199,12 @@ static MBProgressHUDType mbType = MBProgressHUDTypeClassic;
         hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
         hud.label.textColor = [UIColor whiteColor];
         hud.detailsLabel.textColor = [UIColor whiteColor];
-        [[UIActivityIndicatorView appearanceWhenContainedInInstancesOfClasses:@[[MBProgressHUD class]]] setColor:[UIColor whiteColor]];
+        if (@available(iOS 9.0, *)) {
+            [[UIActivityIndicatorView appearanceWhenContainedInInstancesOfClasses:@[[MBProgressHUD class]]] setColor:[UIColor whiteColor]];
+        } else {
+            [[UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil] setColor:[UIColor whiteColor]];
+            // Fallback on earlier versions
+        }
     }
     
     hud.animationType = MBProgressHUDAnimationZoomIn;
