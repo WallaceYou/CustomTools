@@ -30,43 +30,33 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 
 #pragma mark - 在窗口上显示
-/**
- 在主窗口上显示菊花（遮盖整个窗口，什么都不能点击）
- */
+/** 在主窗口上显示菊花（遮盖整个窗口，什么都不能点击）*/
 + (void)showProgressOnWindow;
 
 
 
-/**
- 在主窗口上显示菊花+文字（遮盖整个窗口，什么都不能点击）
- */
+/** 在主窗口上显示菊花+文字（遮盖整个窗口，什么都不能点击）*/
 + (void)showProgressOnWindowText:(NSString *)text;
 
 
 
 
 
+
 #pragma mark - 在当前View上显示
-/**
- 在当前View上显示菊花，默认遮盖范围为整个view
- */
+/** 在当前View上显示菊花，默认遮盖范围为整个view */
 + (void)showProgressOnCurrentView;
 
 
 
-/**
- 在当前View上显示菊花+文字，默认遮盖范围为整个view
- 
- @param text        显示的文字
- */
+/** 在当前View上显示菊花+文字，默认遮盖范围为整个view */
 + (void)showProgressOnCurrentViewText:(NSString *)text;
 
 
 
 /**
  在当前View上显示菊花
- 
- @param coverScope  遮盖范围
+ @param coverScope  遮盖范围（整个View或者没有不遮盖）
  */
 + (void)showProgressOnCurrentViewCoverScope:(MBProgressHUDCoverScope)coverScope;
 
@@ -74,9 +64,6 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 /**
  在当前View上显示菊花+文字
- 
- @param coverScope  遮盖范围
- @param text        显示的文字
  */
 + (void)showProgressOnCurrentViewCoverScope:(MBProgressHUDCoverScope)coverScope text:(NSString *)text;
 
@@ -84,7 +71,6 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 /**
  在当前View上显示菊花+文字+Y轴偏移量
- 
  @param coverScope  遮盖范围
  @param text        显示的文字
  @param offsetY     Y轴偏移量
@@ -96,28 +82,18 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 
 #pragma mark - 在某个View上显示
-/**
- 在某个View上显示菊花，默认遮盖范围为整个view
- 
- @param view        显示progress的View
- */
+/** 在某个View上显示菊花，默认遮盖范围为整个view */
 + (void)showProgressOnView:(UIView *)view;
 
 
 
-/**
- 在某个View上显示菊花+文字，默认遮盖范围为整个view
- 
- @param view        显示progress的View
- @param text        显示的文字
- */
+/** 在某个View上显示菊花+文字，默认遮盖范围为整个view */
 + (void)showProgressOnView:(UIView *)view text:(NSString *)text;
 
 
 
 /**
  在某个View上显示菊花
- 
  @param view        显示progress的View
  @param coverScope  遮盖范围
  */
@@ -125,20 +101,13 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 
 
-/**
- 在某个View上显示菊花+文字
- 
- @param view        显示progress的View
- @param coverScope  遮盖范围
- @param text        显示的文字
- */
+/** 在某个View上显示菊花+文字 */
 + (void)showProgressOnView:(UIView *)view coverScope:(MBProgressHUDCoverScope)coverScope text:(NSString *)text;
 
 
 
 /**
  在某个View上显示菊花+文字+Y轴偏移量
- 
  @param view        显示progress的View
  @param coverScope  遮盖范围
  @param text        显示的文字
@@ -162,19 +131,19 @@ typedef NS_ENUM(NSUInteger, MBProgressHUDType) {
 
 
 #pragma mark - 在主窗口显示提示信息
-/** 在主窗口上只显示文本信息，并且1.5秒钟后隐藏，背景可以点击 */
+/** 在主窗口上只显示文本信息，并且1.5秒钟后隐藏，默认不遮盖任何部分 */
 + (void)showMessage:(NSString *)message;
 
 /** 在主窗口上只显示文本信息，并且1.5秒钟后隐藏，根据coverScope参数决定覆盖范围 */
 + (void)showMessage:(NSString *)message coverScope:(MBProgressHUDCoverScope)coverScope;
 
-/** 在主窗口上显示成功信息，并且1.5秒钟后隐藏 */
+/** 在主窗口上显示成功信息，并且1.5秒钟后隐藏，默认不遮盖任何部分 */
 + (void)showSuccess:(NSString *)success;
 
 /** 在主窗口上显示成功信息，并且1.5秒钟后隐藏，根据coverScope参数决定覆盖范围 */
 + (void)showSuccess:(NSString *)success coverScope:(MBProgressHUDCoverScope)coverScope;
 
-/** 在主窗口上显示失败信息，并且1.5秒钟后隐藏 */
+/** 在主窗口上显示失败信息，并且1.5秒钟后隐藏，默认不遮盖任何b部分 */
 + (void)showError:(NSString *)error;
 
 /** 在主窗口上显示失败信息，并且1.5秒钟后隐藏，根据coverScope参数决定覆盖范围 */

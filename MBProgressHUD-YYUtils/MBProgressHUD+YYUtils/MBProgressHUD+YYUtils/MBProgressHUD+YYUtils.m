@@ -7,10 +7,8 @@
 //
 
 #import "MBProgressHUD+YYUtils.h"
-#import "Masonry.h"
 
 #define DURATION 1.5
-#define HUD_BORDER_LENGTH 200
 #define kWindowH [UIScreen mainScreen].bounds.size.height
 #define kWindowW [UIScreen mainScreen].bounds.size.width
 
@@ -215,6 +213,10 @@ static MBProgressHUDType mbType = MBProgressHUDTypeClassic;
 
 + (void)showText:(NSString *)text icon:(NSString *)icon coverScope:(MBProgressHUDCoverScope)coverScope {
     
+    NSBundle *resourcesBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Images" ofType:@"bundle"]];
+    UIImage *iconImage = [UIImage imageNamed:icon inBundle:resourcesBundle compatibleWithTraitCollection:nil];
+    
+    
     UIView *window = [UIApplication sharedApplication].keyWindow;
     
     //获取一个默认的hud，再进行相应自定义
@@ -224,7 +226,7 @@ static MBProgressHUDType mbType = MBProgressHUDTypeClassic;
     UIView *customView = [[UIView alloc] init];
     
     //显示的错误或者成功图片icon
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:icon]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:iconImage];
     imageView.translatesAutoresizingMaskIntoConstraints = NO;
     [customView addSubview:imageView];
     
@@ -243,7 +245,7 @@ static MBProgressHUDType mbType = MBProgressHUDTypeClassic;
     
     //创建一个VFL中的长度参照表
     NSDictionary *metrics = @{@"left":@0,@"right":@0,@"top":@0,@"bottom":@0,@"space":@(10)};
-
+    
     //VFL水平方向表达式
     NSString *hVFL = @"H:|-left-[textLabel]-right-|";
     NSArray *hcs = [NSLayoutConstraint constraintsWithVisualFormat:hVFL options:0 metrics:metrics views:diction];

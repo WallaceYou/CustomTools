@@ -3,7 +3,7 @@
 //  Mu
 //
 //  Created by youyu on 17/5/9.
-//  Copyright © 2017年 com.morpx. All rights reserved.
+//  Copyright © 2017年 yuyou. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
