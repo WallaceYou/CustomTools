@@ -1,0 +1,25 @@
+//
+//  MultiTablePrefixHeader.pch
+//  MultiTableViewScroll
+//
+//  Created by 游宇的Macbook on 2019/12/20.
+//  Copyright © 2019 YuYou. All rights reserved.
+//
+
+#ifndef MultiTablePrefixHeader_pch
+#define MultiTablePrefixHeader_pch
+
+#import "Masonry.h"
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define SCREEN_WIDTH                    CGRectGetWidth([UIScreen mainScreen].bounds)
+#define SCREEN_HEIGHT                   CGRectGetHeight([UIScreen mainScreen].bounds)
+
+static NSString *const kGoTopNotificationName = @"goTop";//进入置顶命令，关闭大tableView滑动，开始滑动小tableView
+static NSString *const kLeaveTopNotificationName = @"leaveTop";//离开置顶命令，关闭小tableView滑动，开始滑动大tableView
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MultiTablePrefixHeader_pch */
