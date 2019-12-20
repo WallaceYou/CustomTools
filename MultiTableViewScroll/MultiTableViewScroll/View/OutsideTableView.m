@@ -89,7 +89,7 @@
     if (_isTopIsCanNotMoveTabView != _isTopIsCanNotMoveTabViewPre) {
         if (!_isTopIsCanNotMoveTabViewPre && _isTopIsCanNotMoveTabView) {
             //NSLog(@"小tableView滑动到顶端");
-            [[NSNotificationCenter defaultCenter] postNotificationName:kGoTopNotificationName object:nil userInfo:@{@"canScroll":@"1"}];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kGoTopNotificationName object:nil];
             _canScroll = NO;
             self.fixOffset = scrollView.contentOffset;
             self.showsVerticalScrollIndicator = NO;
